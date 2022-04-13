@@ -21,10 +21,12 @@ export interface SaveCommand {
   readonly newTitle: string;
 }
 
-export type ClearCompletedCommand = never;
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface ClearCompletedCommand {}
 
-export type SelectTodosQuery = never;
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface SelectTodosQuery {}
 
 export interface SelectTodosQueryResult {
-  readonly todos: Todo[];
+  readonly todos: readonly Todo[];
 }

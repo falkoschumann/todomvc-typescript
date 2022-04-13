@@ -2,9 +2,8 @@
   "name": "todos-backend",
   "version": "0.1.0",
   "private": true,
-  "files": [
-    "dist"
-  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest src",

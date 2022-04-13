@@ -2,7 +2,8 @@
   "name": "todos",
   "workspaces": [
     "todos-contract",
-    "todos-backend"
+    "todos-backend",
+    "todos-frontend"
   ],
   "scripts": {
     "build": "npm run build --workspaces --if-present",

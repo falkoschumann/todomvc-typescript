@@ -1,5 +1,7 @@
+export type TodoId = number;
+
 export type Todo = Readonly<{
-  id: number;
+  id: TodoId;
   title: string;
   completed: boolean;
 }>;
