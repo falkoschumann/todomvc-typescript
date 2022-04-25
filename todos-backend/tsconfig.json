@@ -1,15 +1,7 @@
 {
+  "extends": "../tsconfig.json",
   "compilerOptions": {
-    "target": "ES6",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
-    "noImplicitAny": true,
-    "removeComments": true,
-    "sourceMap": true,
-    "strict": true,
-    "outDir": "dist",
-    "declaration": true,
-    "esModuleInterop": true
+    "outDir": "./dist"
   },
   "include": ["src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]

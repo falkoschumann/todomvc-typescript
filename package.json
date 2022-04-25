@@ -17,6 +17,7 @@
     "prettier:write": "prettier --write ."
   },
   "devDependencies": {
+    "@tsconfig/recommended": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.18.0",
     "@typescript-eslint/parser": "^5.18.0",
     "concurrently": "^7.1.0",
