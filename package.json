@@ -7,8 +7,11 @@
     "todos-frontend"
   ],
   "scripts": {
+    "clean": "tsc --build --clean",
+    "build": "tsc --build",
+    "watch": "tsc --build --watch",
     "start": "concurrently \"npm start --workspace=todos-backend-server\" \" npm start --workspace=todos-frontend\"",
-    "build": "npm run build --workspaces --if-present",
+    "dist": "npm run dist --workspaces --if-present",
     "test": "npm run test --workspaces --if-present",
     "analyze": "npm run eslint && npm run prettier:check",
     "eslint": "eslint */src",

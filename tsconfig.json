@@ -1,8 +1,14 @@
 {
-  "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
     "sourceMap": true,
     "declaration": true,
-    "declarationMap": true,
-  }
+    "declarationMap": true
+  },
+  "references": [
+    { "path": "./todos-contract" },
+    { "path": "./todos-backend" },
+    { "path": "./todos-backend-server" },
+    { "path": "./todos-frontend" }
+  ],
+  "include": []
 }
