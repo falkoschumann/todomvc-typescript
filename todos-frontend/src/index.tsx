@@ -3,16 +3,19 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 import { MessageHandling } from 'todos-contract';
-import { LocalStorageTodosRepository, MessageHandler } from 'todos-backend';
+//import { LocalStorageTodosRepository, MessageHandler } from 'todos-backend';
 
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import { StoreProvider } from './components/StoreProvider';
 
 import './index.css';
+import { BackendProxy } from './BackendProxy';
 
-const todosRepository = new LocalStorageTodosRepository();
-const messageHandler: MessageHandling = new MessageHandler(todosRepository);
+//const todosRepository = new LocalStorageTodosRepository();
+//const messageHandler: MessageHandling = new MessageHandler(todosRepository);
+
+const messageHandler: MessageHandling = new BackendProxy();
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement);
 root.render(
